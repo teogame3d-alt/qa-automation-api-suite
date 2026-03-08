@@ -1,0 +1,13 @@
+[project]
+name = "qa-automation-api-suite"
+version = "0.1.0"
+description = "Python QA automation API test suite with CI"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "pytest>=8.0",
+  "requests>=2.32",
+]
+
+[tool.pytest.ini_options]
+addopts = "-q"
