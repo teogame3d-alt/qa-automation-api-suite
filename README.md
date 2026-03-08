@@ -28,3 +28,7 @@ python -m venv .venv
 ## Why It Matters for QA Roles
 This repository is intentionally dedicated to automated API validation and repeatable CI checks,
 separate from product/UI projects.
+
+## Mentor Notes
+See MENTOR_NOTES.md for QA-oriented reasoning, design tradeoffs, and learning summary.
+
