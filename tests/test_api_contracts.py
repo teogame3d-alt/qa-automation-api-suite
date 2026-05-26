@@ -1,7 +1,7 @@
 """API automation tests for QA portfolio.
 
 Why this style:
-- I kept tests deterministic and readable so a mentor/recruiter can review fast.
+- I kept tests deterministic and readable so reviewers can inspect failures quickly.
 - Pattern is based on common QA API smoke/contract checks used in pytest + requests.
 - Each test validates one behavior: status, contract keys, or negative path.
 """

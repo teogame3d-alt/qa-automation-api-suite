@@ -1,6 +1,6 @@
-# Internship Learning Map
+# QA Learning Map
 
-This repository is organized to show how Python training and internship-style practice can become reviewable QA automation work.
+This repository is organized to show how Python practice can become reviewable QA automation work.
 
 ## What I Wanted to Prove
 
@@ -8,7 +8,7 @@ This repository is organized to show how Python training and internship-style pr
 - I can separate test scenarios from reusable helper code.
 - I can write API checks that cover smoke, contract, create-flow, and negative-path behavior.
 - I can document QA strategy, not only write test functions.
-- I can use research and mentoring feedback while keeping the final result inspectable through tests and clear code.
+- I can use research and technical feedback while keeping the final result inspectable through tests and clear code.
 
 ## Skills Represented
 

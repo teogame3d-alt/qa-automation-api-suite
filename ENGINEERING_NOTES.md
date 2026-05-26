@@ -1,7 +1,7 @@
-# Mentor Notes
+# Engineering Notes
 
 ## Why this project exists
-This is my dedicated QA automation repository so interviewers can evaluate API testing skills independently from product/UI repos.
+This is my dedicated QA automation repository for evaluating API testing skills independently from product/UI repos.
 
 ## Technical decisions
 - Focused on smoke + contract + negative-path tests.

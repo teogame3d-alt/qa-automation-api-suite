@@ -1,6 +1,6 @@
 # QA Automation API Suite
 
-Recruiter-focused Python QA project for API test automation.
+Compact Python QA project for API test automation, contract checks, and CI-backed validation.
 
 ![QA Automation API Suite overview](docs/images/api-suite-overview.png)
 
@@ -14,7 +14,7 @@ Recruiter-focused Python QA project for API test automation.
 - CI execution on every push (GitHub Actions)
 - Small framework structure: reusable API client, pytest fixture, and assertion helpers
 - Automation-focused test strategy, microservices testing plan, Agile QA workflow, and QA metrics documentation
-- Post-internship learning translated into reviewable repository structure, docstrings, tests, and QA documentation
+- Python QA learning translated into reviewable repository structure, docstrings, tests, and QA documentation
 
 ## Tech
 Python, pytest, requests, GitHub Actions.
@@ -31,11 +31,11 @@ The screenshot above is an evidence board for the automation scope. It is not a 
 it summarizes the framework, checks, and CI signal so a reviewer can understand the project before
 opening the test files.
 
-## Post-Internship Learning Signals
+## Engineering Learning Signals
 - Test code is separated from reusable client/assertion helpers.
 - Assertions include triage-friendly failure messages.
 - Documentation explains automation strategy, microservices thinking, Agile QA workflow, and quality metrics.
-- The repository is intentionally small enough for a recruiter or mentor to inspect quickly, while still showing framework thinking.
+- The repository is intentionally small enough to inspect quickly, while still showing framework thinking.
 
 ## Test Scope
 - `GET /posts/1`: status and payload shape
@@ -62,9 +62,9 @@ $env:QA_API_BASE_URL="https://jsonplaceholder.typicode.com"
 This repository is intentionally dedicated to automated API validation and repeatable CI checks,
 separate from product/UI projects.
 
-## Mentor Notes
-See MENTOR_NOTES.md for QA-oriented reasoning, design tradeoffs, and learning summary.
+## Engineering Notes
+See ENGINEERING_NOTES.md for QA-oriented reasoning, design tradeoffs, and learning summary.
 
 ## Learning Map
-See `docs/INTERNSHIP_LEARNING_MAP.md` for the connection between SkillBrain/Python learning, QA automation practice, and portfolio evidence.
+See `docs/QA_LEARNING_MAP.md` for the connection between Python learning, QA automation practice, and portfolio evidence.
 
