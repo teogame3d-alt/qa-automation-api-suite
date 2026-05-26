@@ -8,6 +8,9 @@ Recruiter-focused Python QA project for API test automation.
 - API smoke tests and endpoint health checks
 - Response schema/contract assertions
 - Negative-path validation (error status behavior)
+- Environment-configurable base URL through `QA_API_BASE_URL`
+- Reusable request layer with default headers, query parameters, JSON payloads, and timeout control
+- Response metadata checks: content type and practical latency budget
 - CI execution on every push (GitHub Actions)
 - Small framework structure: reusable API client, pytest fixture, and assertion helpers
 - Automation-focused test strategy, microservices testing plan, Agile QA workflow, and QA metrics documentation
@@ -37,6 +40,7 @@ opening the test files.
 ## Test Scope
 - `GET /posts/1`: status and payload shape
 - `GET /users`: list integrity and required fields
+- `GET /posts?userId=1`: query parameter filtering and relationship consistency
 - `POST /posts`: basic create flow and response contract
 - `GET /invalid-route`: expected 404 behavior
 
@@ -45,6 +49,12 @@ opening the test files.
 python -m venv .venv
 .venv\Scripts\python -m pip install -U pip
 .venv\Scripts\python -m pip install -e .
+.venv\Scripts\python -m pytest
+```
+
+Optional target override:
+```bash
+$env:QA_API_BASE_URL="https://jsonplaceholder.typicode.com"
 .venv\Scripts\python -m pytest
 ```
 

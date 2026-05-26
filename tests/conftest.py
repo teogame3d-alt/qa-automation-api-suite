@@ -1,5 +1,7 @@
 from __future__ import annotations
 
+import os
+
 import pytest
 
 from qa_automation_api_suite.client import ApiClient
@@ -13,4 +15,11 @@ def api_client() -> ApiClient:
     the environment can change without rewriting individual test cases.
     """
 
-    return ApiClient("https://jsonplaceholder.typicode.com")
+    base_url = os.getenv("QA_API_BASE_URL", "https://jsonplaceholder.typicode.com")
+    return ApiClient(
+        base_url,
+        default_headers={
+            "Accept": "application/json",
+            "User-Agent": "teogame3d-qa-automation-suite/0.1",
+        },
+    )

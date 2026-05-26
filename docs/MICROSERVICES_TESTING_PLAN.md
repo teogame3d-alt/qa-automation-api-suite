@@ -8,6 +8,9 @@ This repository uses a public demo API, but the same testing approach can be ext
 - HTTP status codes and error behavior.
 - Contract stability between services.
 - JSON payload shape and required fields.
+- Field type consistency for consumer-facing payloads.
+- Query/filter behavior for collection endpoints.
+- Response metadata such as content type and practical latency budgets.
 - Data consistency between related endpoints.
 - Negative paths and invalid input behavior.
 - Regression coverage for high-risk flows.
@@ -31,4 +34,3 @@ For a Live and VoD ecosystem, I would design end-to-end checks around:
 - User/session state.
 - Error messages when content is unavailable.
 - Regression checks for critical customer flows.
-
