@@ -27,8 +27,8 @@ Python, pytest, requests, GitHub Actions.
 - `docs/`: test strategy, microservices testing plan, Agile workflow, QA metrics
 
 ## Visual Review
-The screenshot above is an evidence board for the automation scope. It is not a fake product UI;
-it summarizes the framework, checks, and CI signal so a reviewer can understand the project before
+The screenshot above is an evidence board for the automation scope. It summarizes the framework,
+checks, and CI signal so a reviewer can understand the project before
 opening the test files.
 
 ## Engineering Learning Signals
@@ -36,6 +36,17 @@ opening the test files.
 - Assertions include triage-friendly failure messages.
 - Documentation explains automation strategy, microservices thinking, Agile QA workflow, and quality metrics.
 - The repository is intentionally small enough to inspect quickly, while still showing framework thinking.
+
+## Proof of Work
+- Tests exercise smoke paths, response contracts, query parameters, create-flow behavior, and a negative route.
+- `QA_API_BASE_URL` allows the same tests to target another compatible environment.
+- CI runs the suite on GitHub Actions so failures are visible outside a local machine.
+- Docs explain test strategy, microservices testing awareness, Agile QA workflow, and QA metrics in practical terms.
+
+## Difficult Parts / Tradeoffs
+- The suite uses a public demo API to stay easy to run; that limits how much stateful or destructive testing can be shown.
+- Contract checks are strict enough to catch shape changes, but not so strict that the tests become unreadable.
+- The project is intentionally focused on API QA instead of becoming a mixed product app.
 
 ## Test Scope
 - `GET /posts/1`: status and payload shape

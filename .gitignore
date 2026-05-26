@@ -1,5 +1,6 @@
 __pycache__/
 .pytest_cache/
+.pytest_tmp/
 *.pyc
 
 # Python / build artifacts
@@ -39,5 +40,6 @@ local_artifacts/
 private_artifacts/
 .idea/
 .vscode/
+.DS_Store
 Thumbs.db
 desktop.ini
